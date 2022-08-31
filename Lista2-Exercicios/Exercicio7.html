@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<script>
+    //Exercício ler 6 números e somar os valores menores que 72
+    var num = [];
+    var soma = 0;
+
+    for(var i =0; i<6; i++){
+        num[i] = parseInt(prompt("Informe o " + i + "° número"));
+        
+        if(num[i] < 72){
+            soma = soma + num[i];
+        }
+    }
+    document.write("<br>Os números informados foram: <strong>" + num + "</strong><br><br>");
+    document.write("A soma dos números com o valor inferior a 72 é: <strong>" + soma +"</strong>");
+
+</script>
+<body>
+    
+</body>
+</html>

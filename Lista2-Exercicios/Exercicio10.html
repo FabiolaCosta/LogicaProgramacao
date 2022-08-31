@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+<script>
+    //Exercício para calcular o peso
+    var sexo = parseInt(prompt("Informe o número '1' para Femenino OU '2' para Masculino"));
+    var altura;
+    var psM, psF;
+    
+    if(sexo == "1"){
+        altura = parseFloat(prompt("Informe a sua altura"));
+        psF = (62.1 * altura) - 44.7;
+        alert("O seu peso ideal é: " + psF);
+    }
+    else if(sexo == "2"){
+        altura = parseFloat(prompt("Informe a sua altura"));
+        psM = (72.7 * altura) - 58;
+        alert("O seu peso ideal é: " + psM);
+    }
+    else{
+        alert("Por favor, digite apenas 1 para femenino ou 2 para masculino");
+    }
+</script>
+<body>
+    
+</body>
+</html>

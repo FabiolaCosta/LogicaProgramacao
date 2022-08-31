@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+<script>
+    //Exercício criar uma mini calculadora
+    var num1 = parseInt(prompt("Informe o 1° número:"));
+    var operacao = parseInt(prompt("Informe: 1 = Adição, 2 = Subtração, 3 = Divisão e 4 = Multiplicação"));
+    var num2 = parseInt(prompt("Informe o 2° número:"));
+    var cont;
+
+    switch (operacao){
+        case 1:
+            cont = num1 + num2;
+            alert("O resultado de "+ num1 + "+" + num2 + " é: " + cont);
+        break;
+        case 2:
+            cont = num1 - num2;
+            alert("O resultado de "+ num1 + "-" + num2 + " é: " + cont);
+        break;
+        case 3:
+            cont = num1 / num2;
+            alert("O resultado de "+ num1 + "/" + num2 + " é: " + cont);
+        break;
+        case 4:
+            cont = num1 * num2;
+            alert("O resultado de "+ num1 + "X" + num2 + " é: " + cont);
+        break;
+        default:
+            alert("Informe apenas 1 = Adição, 2 = Subtração, 3 = Divisão e 4 = Multiplicação");
+    }
+
+</script>
+<body>
+    
+</body>
+</html>

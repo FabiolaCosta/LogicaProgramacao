@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+<script>
+    var num = [];
+    var cont = 0;
+    
+    document.write("Os números que estão dentro do intevalo de 24 e 42 são: <br>")
+
+    for(i=0; i<10; i++){
+        num[i] = parseInt(prompt("Informe o " + i + "º número:"));
+
+        if(num[i] >= 24 && num[i] <= 42){
+            document.write(num[i] + "<br>");
+        }else{
+            cont += 1;
+        }
+    }
+    document.write("<br>O total de números que estão fora do intervalo de 24 e 42 é: " + cont);
+
+</script>
+<body>
+</body>
+</html>

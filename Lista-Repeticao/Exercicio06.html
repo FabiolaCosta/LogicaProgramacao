@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<script>
+    var nota1, nota2, media = 0, cont=0;
+    var aprovacao = 9.5;
+    var continuar = "S";
+
+    while(continuar == "S" || continuar == 's'){
+        nota1 = parseInt(prompt("Informe a primeira nota: "));
+        nota2 = parseInt(prompt("Informe a segunda nota: "));
+        media = parseFloat((nota1+nota2)/2);
+       
+        if(media >= aprovacao){
+            alert("Aluno aprovado com a média: " + media);
+            cont += 1;
+        }
+        else{
+            alert("Aluno reprovado com a média: " + media);
+        }       
+        continuar = prompt("Deseja calcular a média de outro aluno Sim/Não? Informe 'S' = Sim ou 'N' = Não");
+    }
+    alert("A quantidade de alunos aprovados é: " + cont);
+
+</script>
+<body>
+    
+</body>
+</html>
